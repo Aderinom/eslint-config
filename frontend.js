@@ -2,19 +2,18 @@ const { shared_rules } = require("./shared-rules");
 
 module.exports = {
   parser: "@typescript-eslint/parser",
-  parserOptions: { project },
+  root: true,
   env: { 
     browser: true, 
     es2020: true 
   },
   plugins: ["@typescript-eslint/eslint-plugin", "react-refresh", "unicorn"],
   extends: [
-    "plugin:unicorn/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended",
+    "unicorn/recommended",
+    "@typescript-eslint/recommended",
+    "prettier/recommended",
+    "react-hooks/recommended",
   ],
-  root: true,
   ignorePatterns: [".eslintrc.js"],
   rules: {
     ...shared_rules,
