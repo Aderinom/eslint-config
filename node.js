@@ -9,9 +9,9 @@ module.exports = {
   },
   plugins: ["@typescript-eslint/eslint-plugin", "unicorn"],
   extends: [
-    "unicorn/recommended",
-    "@typescript-eslint/recommended",
-    "prettier/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
   ],
   ignorePatterns: [".eslintrc.js"],
   rules: {

@@ -9,10 +9,10 @@ module.exports = {
   },
   plugins: ["@typescript-eslint/eslint-plugin", "react-refresh", "unicorn"],
   extends: [
-    "unicorn/recommended",
-    "@typescript-eslint/recommended",
-    "prettier/recommended",
-    "react-hooks/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
   ],
   ignorePatterns: [".eslintrc.js"],
   rules: {
