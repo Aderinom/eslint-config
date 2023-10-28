@@ -1,6 +1,4 @@
-const { resolve } = require("node:path");
-
-const project = resolve(process.cwd(), "tsconfig.json");
+const { shared_rules } = require("./shared-rules");
 
 module.exports = {
   parser: "@typescript-eslint/parser",
