@@ -1,6 +1,6 @@
 {
     "name": "@aderinom/eslint-config",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "dependencies": {
         "@rushstack/eslint-patch": "^1.5.1",
         "@typescript-eslint/eslint-plugin": "^6.9.0",
@@ -13,7 +13,7 @@
         "eslint-plugin-unicorn": "^48.0.1"
     },
     "peerDependencies": {
-        "eslint": "^8.50.0",
+        "eslint": "^8.7.0",
         "prettier": ">=3.0.0"
     }
 }

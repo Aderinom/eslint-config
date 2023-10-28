@@ -3,6 +3,15 @@
 Since I keep on making new projects I needed some reusable eslint config. That's it.
 As I assume only I will ever use this, i have not bothered uploading it to NPM.
 
+Anyways, if you are still curious - i think this + vscode is a pretty well working setup.
+
+This uses:
+Eslint
+Prettier
+React-Refresh
+React-Hooks
+Unicorn
+
 
 # How to use?
 
@@ -15,8 +24,17 @@ module.exports = {
   extends: ["@aderinom/eslint-config/frontend"],
 };
 ```
+If using Vscode - to get linting errors, automatic formatting and auto format on save:
+3. Add this package, [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to vscode
+4. Add this to your vsconfig:
+```json
+"eslint.format.enable": true,
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+},
+```
 
-3. You can either use the "frontend" config, or the "nodejs" config depending on your usecase.
+5. You can either use the "frontend" config, or the "nodejs" config depending on your usecase.
 
 # Anything interesting here? 
 
