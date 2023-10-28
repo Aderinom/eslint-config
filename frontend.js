@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 const { shared_rules } = require("./shared-rules");
 
 module.exports = {

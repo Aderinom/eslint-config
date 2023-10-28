@@ -7,8 +7,10 @@ As I assume only I will ever use this, i have not bothered uploading it to NPM.
 # How to use?
 
 1. Add this package, Eslint and Prettier as a devDependency
-2. Add following line to your eslint config:
+2. Add following lines to your eslint config:
 ```javascript
+require("@rushstack/eslint-patch/modern-module-resolution"); //changes eslint's packet resolution to allow a monorepo setup
+
 module.exports = {
   extends: ["@aderinom/eslint-config/frontend"],
 };
